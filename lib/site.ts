@@ -4,7 +4,7 @@ export const siteConfig = {
   description:
     "Primenet Systems is a software company in Ghana building websites, mobile apps, and custom business software for modern organizations.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.primenetsystem.com",
-  ogImage: "/opengraph-image",
+  ogImage: "/primenet.png",
   creator: "Primenet Systems",
   keywords: [
     "Primenet Systems",
@@ -17,4 +17,3 @@ export const siteConfig = {
     "software consulting Ghana",
   ],
 } as const;
-

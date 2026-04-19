@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { siteConfig } from "@/lib/site";
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -14,26 +12,6 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  applicationName: siteConfig.name,
-  keywords: [...siteConfig.keywords],
-  authors: [{ name: siteConfig.creator }],
-  creator: siteConfig.creator,
-  publisher: siteConfig.name,
-  category: "technology",
-  alternates: {
-    canonical: "/",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
   openGraph: {
     type: "website",
     locale: "en_GH",
@@ -55,6 +33,9 @@ export const metadata: Metadata = {
     title: "Primenet Systems | Software Company in Ghana",
     description: siteConfig.description,
     images: [siteConfig.ogImage],
+  },
+  alternates: {
+    canonical: "/",
   },
   icons: {
     icon: [
@@ -83,7 +64,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background", inter.className)}>
+      <body className={cn("min-h-screen bg-background text-foreground")}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
