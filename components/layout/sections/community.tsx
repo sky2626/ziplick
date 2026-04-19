@@ -1,4 +1,3 @@
-import DiscordIcon from "@/components/icons/discord-icon";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -14,27 +13,25 @@ export const CommunitySection = () => {
       <hr className="border-secondary" />
       <div className="container py-20 sm:py-20">
         <div className="lg:w-[60%] mx-auto">
-          <Card className="bg-background border-none shadow-none text-center flex flex-col items-center justify-center">
-            <CardHeader>
-              <CardTitle className="text-4xl md:text-5xl font-bold flex flex-col items-center">
-                <DiscordIcon />
-                <div>
-                  Ready to join this
-                  <span className="text-transparent pl-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                    Community?
-                  </span>
-                </div>
+            <Card className="bg-background border-none shadow-none text-center flex flex-col items-center justify-center">
+              <CardHeader>
+              <CardTitle className="text-4xl md:text-5xl font-bold">
+                Need a dependable
+                <span className="text-transparent pl-2 bg-gradient-to-r from-sky-400 to-primary bg-clip-text">
+                  technology partner?
+                </span>
               </CardTitle>
             </CardHeader>
             <CardContent className="lg:w-[80%] text-xl text-muted-foreground">
-              Join our vibrant Discord community! Connect, share, and grow with
-              like-minded enthusiasts. Click to dive in! 🚀
+              Primenet Systems helps businesses launch new digital products,
+              improve existing platforms, and plan the right technical path for
+              growth.
             </CardContent>
 
             <CardFooter>
               <Button asChild>
-                <a href="https://discord.com/" target="_blank">
-                  Join Discord
+                <a href="https://wa.me/233546383716" target="_blank">
+                  Start a Conversation
                 </a>
               </Button>
             </CardFooter>

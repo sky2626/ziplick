@@ -10,25 +10,29 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
-    description: "Establish credibility with a strong online presence, customer reviews, and consistent messaging.",
+    icon: "Rocket",
+    title: "Faster Launches",
+    description:
+      "Move from idea to working product faster with a focused team and a practical delivery process.",
   },
   {
-    icon: "LineChart",
-    title: "More Leads",
-    description: "Attract and engage potential customers with targeted strategies, increasing inquiries and sign-ups.",
+    icon: "BadgeCheck",
+    title: "Reliable Systems",
+    description:
+      "Reduce avoidable downtime and confusion with software that is built for stability and ease of use.",
   },
   {
-    icon: "Wallet",
-    title: "Higher Conversions",
-    description: "Optimize user experience and CTAs to turn visitors into loyal customers, maximizing revenue growth.",
+    icon: "Users",
+    title: "Better Customer Experience",
+    description:
+      "Deliver smoother interactions for your users with thoughtful design and efficient digital workflows.",
   },
   {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
-    description: "Experiment with different strategies and analyze performance to refine and improve marketing campaigns.",
-  }
+    icon: "LifeBuoy",
+    title: "Long-Term Support",
+    description:
+      "Keep improving after launch with help for maintenance, updates, redesigns, and new features.",
+  },
 ];
 
 export const BenefitsSection = () => {
@@ -39,12 +43,12 @@ export const BenefitsSection = () => {
           <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            Why Businesses Work With Us
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Achieve your goals faster with proven strategies and expert insights.
-            Streamline processes, enhance efficiency, and unlock new opportunities
-            for growth with our cutting-edge solutions.
+            We help organizations turn ideas into dependable software products
+            that improve operations, strengthen customer experience, and support
+            growth.
           </p>
         </div>
 

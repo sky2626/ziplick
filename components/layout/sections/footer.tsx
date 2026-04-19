@@ -11,90 +11,101 @@ export const FooterSection = () => {
             <Link href="#" className="flex font-bold items-center">
               <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
 
-              <h3 className="text-2xl">ZipLick</h3>
+              <h3 className="text-2xl">Primenet Systems</h3>
             </Link>
+            <p className="mt-4 text-sm text-muted-foreground">
+              We build practical software solutions for businesses that need
+              reliable websites, mobile apps, and custom systems.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <h3 className="font-bold text-lg">Quick Links</h3>
+            <div>
+              <Link href="#benefits" className="opacity-60 hover:opacity-100">
+                Benefits
+              </Link>
+            </div>
+
+            <div>
+              <Link href="#services" className="opacity-60 hover:opacity-100">
+                Services
+              </Link>
+            </div>
+
+            <div>
+              <Link href="#faq" className="opacity-60 hover:opacity-100">
+                FAQ
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <h3 className="font-bold text-lg">Services</h3>
+            <div>
+              <Link href="#services" className="opacity-60 hover:opacity-100">
+                Web Development
+              </Link>
+            </div>
+
+            <div>
+              <Link href="#services" className="opacity-60 hover:opacity-100">
+                Mobile Apps
+              </Link>
+            </div>
+
+            <div>
+              <Link href="#services" className="opacity-60 hover:opacity-100">
+                Custom Software
+              </Link>
+            </div>
           </div>
 
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Contact</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Github
+              <Link
+                href="tel:+233546383716"
+                className="opacity-60 hover:opacity-100"
+              >
+                +233 54 638 3716
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                X
+              <Link
+                href="https://wa.me/233546383716"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
+                WhatsApp
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Instagram
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Platforms</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                iOS
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Android
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Web
+              <Link href="#contact" className="opacity-60 hover:opacity-100">
+                Start a Project
               </Link>
             </div>
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Help</h3>
+            <h3 className="font-bold text-lg">Company</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Contact Us
+              <Link href="/" className="opacity-60 hover:opacity-100">
+                Home
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                FAQ
+              <Link href="#contact" className="opacity-60 hover:opacity-100">
+                Contact
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Feedback
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Socials</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitch
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Discord
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Dribbble
+              <Link href="#footer" className="opacity-60 hover:opacity-100">
+                Footer
               </Link>
             </div>
           </div>
@@ -103,14 +114,8 @@ export const FooterSection = () => {
         <Separator className="my-6" />
         <section className="">
           <h3 className="">
-            &copy; 2024 Designed and developed by
-            <Link
-              target="_blank"
-              href="https://github.com/leoMirandaa"
-              className="text-primary transition-all border-primary hover:border-b-2 ml-1"
-            >
-              ZipLick
-            </Link>
+            &copy; {new Date().getFullYear()} Primenet Systems. All rights
+            reserved.
           </h3>
         </section>
       </div>

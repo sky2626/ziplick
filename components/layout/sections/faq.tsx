@@ -13,31 +13,35 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "How much will it cost me to build a static site?",
-    answer: "The cost of building a static site depends on factors like design complexity, hosting, and development fees. If you use free platforms like GitHub Pages or Vercel, the cost can be minimal. Hiring a developer or using premium templates may add to the cost.",
-    value: "item-1"
+    question: "What kind of projects does Primenet Systems handle?",
+    answer:
+      "We work on business websites, mobile apps, custom software, interface design, and product improvement projects for organizations that need dependable digital solutions.",
+    value: "item-1",
   },
   {
-    question: "What are the benefits of using a static site over a dynamic one?",
-    answer: "Static sites load faster, offer better security, and require less maintenance compared to dynamic sites. They are ideal for portfolios, blogs, and informational websites.",
-    value: "item-2"
+    question: "Can you build software based on our business needs?",
+    answer:
+      "Yes. We can plan and develop custom solutions around your workflow, user needs, and project goals instead of forcing you into a one-size-fits-all product.",
+    value: "item-2",
   },
   {
-    question: "Which hosting providers are best for static websites?",
-    answer: "Popular choices for static site hosting include Vercel, Netlify, GitHub Pages, and Cloudflare Pages. These platforms offer free tiers with easy deployment options.",
-    value: "item-3"
+    question: "Do you offer support after launch?",
+    answer:
+      "Yes. We can help with updates, bug fixes, design improvements, feature expansion, and general technical support after your product goes live.",
+    value: "item-3",
   },
   {
-    question: "Can I add a CMS to a static site?",
-    answer: "Yes! You can use headless CMS options like Contentful, Strapi, or Sanity to manage content dynamically while keeping the site static for performance.",
-    value: "item-4"
+    question: "How do we get started?",
+    answer:
+      "Use the contact form, share a short summary of your project, and we will continue the conversation with you by phone or WhatsApp.",
+    value: "item-4",
   },
   {
-    question: "How do I improve SEO for a static website?",
-    answer: "To improve SEO, optimize your metadata, use clean URLs, include structured data, and ensure fast page load speeds. Also, generate and submit a sitemap to search engines.",
-    value: "item-5"
-  }
-
+    question: "What phone number can we use to reach you?",
+    answer:
+      "You can contact Primenet Systems directly on +233 54 638 3716 for project enquiries and follow-up conversations.",
+    value: "item-5",
+  },
 ];
 
 export const FAQSection = () => {

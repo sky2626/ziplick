@@ -11,32 +11,32 @@ interface sponsorsProps {
 
 const sponsors: sponsorsProps[] = [
   {
-    icon: "Crown",
-    name: "Almannan Charity Foundtation",
+    icon: "BriefcaseBusiness",
+    name: "Small Businesses",
   },
   {
-    icon: "Vegan",
-    name: "Kobby West Couture",
+    icon: "ShoppingBag",
+    name: "Retail Brands",
   },
   {
-    icon: "Ghost",
-    name: "Semades",
+    icon: "GraduationCap",
+    name: "Education Teams",
   },
   {
-    icon: "Puzzle",
-    name: "Asansa",
+    icon: "Building2",
+    name: "Corporate Operations",
   },
   {
-    icon: "Squirrel",
-    name: "Acme",
+    icon: "HeartPulse",
+    name: "Health Services",
   },
   {
-    icon: "Cookie",
-    name: "Accmee",
+    icon: "Landmark",
+    name: "Professional Services",
   },
   {
-    icon: "Drama",
-    name: "Acmetech",
+    icon: "MonitorCog",
+    name: "Digital Teams",
   },
 ];
 
@@ -44,7 +44,7 @@ export const SponsorsSection = () => {
   return (
     <section id="sponsors" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
       <h2 className="text-lg md:text-xl text-center mb-6">
-        Trusted by
+        Built for teams in
       </h2>
 
       <div className="mx-auto">

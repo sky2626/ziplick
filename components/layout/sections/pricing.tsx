@@ -25,48 +25,48 @@ interface PlanProps {
 
 const plans: PlanProps[] = [
   {
-    title: "Free",
+    title: "Starter",
     popular: 0,
-    price: 0,
+    price: 350,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+      "A good fit for smaller websites, landing pages, and early product ideas.",
+    buttonText: "Request Quote",
     benefitList: [
-      "1 team member",
-      "1 GB storage",
-      "Upto 2 pages",
-      "Community support",
-      "AI assistance",
+      "Discovery session",
+      "Basic UI design",
+      "Responsive frontend",
+      "Launch support",
+      "Project handoff",
     ],
   },
   {
-    title: "Premium",
+    title: "Business",
     popular: 1,
-    price: 45,
+    price: 1200,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get starterd",
+      "Ideal for businesses that need stronger product structure and feature depth.",
+    buttonText: "Book a Call",
     benefitList: [
-      "4 team member",
-      "8 GB storage",
-      "Upto 6 pages",
-      "Priority support",
-      "AI assistance",
+      "Custom design flow",
+      "Business-focused features",
+      "Admin or dashboard support",
+      "Testing and deployment",
+      "Post-launch guidance",
     ],
   },
   {
     title: "Enterprise",
     popular: 0,
-    price: 120,
+    price: 3000,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "For larger systems, product rebuilds, or long-term implementation support.",
+    buttonText: "Contact Us",
     benefitList: [
-      "10 team member",
-      "20 GB storage",
-      "Upto 10 pages",
-      "Phone & email support",
-      "AI assistance",
+      "Custom software planning",
+      "Advanced integrations",
+      "Scalable architecture",
+      "Phone and WhatsApp support",
+      "Maintenance roadmap",
     ],
   },
 ];
@@ -79,11 +79,12 @@ export const PricingSection = () => {
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Get unlimitted access
+        Flexible Engagement Options
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
-        Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
+        Final pricing depends on project scope, features, timeline, and support
+        needs. These ranges help frame typical engagements.
       </h3>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">

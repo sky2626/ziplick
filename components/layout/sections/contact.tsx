@@ -37,24 +37,27 @@ const formSchema = z.object({
 });
 
 export const ContactSection = () => {
+  const whatsappNumber = "233546383716";
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       firstName: "",
       lastName: "",
       email: "",
-      subject: "Web Development",
+      subject: "Business Website",
       message: "",
     },
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     const { firstName, lastName, email, subject, message } = values;
-    console.log(values);
+    const whatsappMessage = `Hello Primenet Systems, I am ${firstName} ${lastName}. My email is ${email}. I would like to discuss ${subject}. ${message}`;
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
 
-    const mailToLink = `mailto:leomirandadev@gmail.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
-
-    window.location.href = mailToLink;
+    window.open(whatsappLink, "_blank");
   }
 
   return (
@@ -66,50 +69,56 @@ export const ContactSection = () => {
               Contact
             </h2>
 
-            <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">
+              Start Your Next Project
+            </h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            ipsam sint enim exercitationem ex autem corrupti quas tenetur
+            Tell us what you want to build and we&apos;ll continue the
+            conversation by phone or WhatsApp. Primenet Systems supports
+            businesses that need dependable digital products and technical
+            guidance.
           </p>
 
           <div className="flex flex-col gap-4">
             <div>
               <div className="flex gap-2 mb-1">
                 <Building2 />
-                <div className="font-bold">Find us</div>
+                <div className="font-bold">Company</div>
               </div>
 
-              <div>742 Evergreen Terrace,</div>
+              <div>Primenet Systems</div>
+              <div>Software company in Ghana</div>
             </div>
 
             <div>
               <div className="flex gap-2 mb-1">
                 <Phone />
-                <div className="font-bold">Call us</div>
+                <div className="font-bold">Call or WhatsApp</div>
               </div>
 
-              <div>(+233) 546-383-716</div>
+              <div>+233 54 638 3716</div>
             </div>
 
             <div>
               <div className="flex gap-2 mb-1">
                 <Mail />
-                <div className="font-bold">Mail US</div>
+                <div className="font-bold">Project Enquiries</div>
               </div>
 
-              <div>ziplick@gmail.com</div>
+              <div>Share your project needs in the form.</div>
+              <div>We&apos;ll follow up on WhatsApp.</div>
             </div>
 
             <div>
               <div className="flex gap-2">
                 <Clock />
-                <div className="font-bold">Visit us</div>
+                <div className="font-bold">Support</div>
               </div>
 
               <div>
-                <div>Everyday</div>
-                <div>24hours</div>
+                <div>Available for new builds, redesigns,</div>
+                <div>product improvements, and consulting.</div>
               </div>
             </div>
           </div>
@@ -131,7 +140,7 @@ export const ContactSection = () => {
                       <FormItem className="w-full">
                         <FormLabel>First Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Leopoldo" {...field} />
+                          <Input placeholder="John" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -144,7 +153,7 @@ export const ContactSection = () => {
                       <FormItem className="w-full">
                         <FormLabel>Last Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Miranda" {...field} />
+                          <Input placeholder="Doe" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -162,7 +171,7 @@ export const ContactSection = () => {
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="leomirandadev@gmail.com"
+                            placeholder="you@example.com"
                             {...field}
                           />
                         </FormControl>
@@ -189,18 +198,20 @@ export const ContactSection = () => {
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="Web Development">
-                              Web Development
+                            <SelectItem value="Business Website">
+                              Business Website
                             </SelectItem>
-                            <SelectItem value="Mobile Development">
-                              Mobile Development
+                            <SelectItem value="Mobile App">
+                              Mobile App
                             </SelectItem>
-                            <SelectItem value="Figma Design">
-                              Figma Design
+                            <SelectItem value="Custom Software">
+                              Custom Software
                             </SelectItem>
-                            <SelectItem value="REST API">REST API</SelectItem>
-                            <SelectItem value="FullStack Project">
-                              FullStack Project
+                            <SelectItem value="UI/UX Design">
+                              UI/UX Design
+                            </SelectItem>
+                            <SelectItem value="Maintenance and Support">
+                              Maintenance and Support
                             </SelectItem>
                           </SelectContent>
                         </Select>
@@ -232,7 +243,7 @@ export const ContactSection = () => {
                   />
                 </div>
 
-                <Button className="mt-4">Send message</Button>
+                <Button className="mt-4">Send via WhatsApp</Button>
               </form>
             </Form>
           </CardContent>

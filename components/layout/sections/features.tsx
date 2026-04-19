@@ -10,35 +10,41 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
-    title: "Mobile Friendly",
-    description: "Optimized for seamless user experience across all devices, ensuring accessibility on smartphones and tablets.",
+    icon: "Layers3",
+    title: "Business-Focused Solutions",
+    description:
+      "Every product is aligned to real operational goals, user needs, and measurable outcomes.",
   },
   {
-    icon: "BadgeCheck",
-    title: "Social Proof",
-    description: "Builds trust through testimonials, reviews, and endorsements, showcasing credibility and reliability.",
+    icon: "ShieldCheck",
+    title: "Reliable Delivery",
+    description:
+      "We prioritize stable builds, clean implementation, and dependable releases you can trust.",
   },
   {
-    icon: "Goal",
-    title: "Targeted Content",
-    description: "Delivers personalized and relevant information to the right audience, increasing engagement and conversions.",
+    icon: "Smartphone",
+    title: "Responsive Experiences",
+    description:
+      "Your website or app is designed to work smoothly across phones, tablets, and desktops.",
   },
   {
-    icon: "PictureInPicture",
-    title: "Strong Visuals",
-    description: "Uses high-quality images, videos, and graphics to enhance engagement and communicate effectively.",
+    icon: "Workflow",
+    title: "Scalable Architecture",
+    description:
+      "We build systems that can evolve with your business instead of forcing expensive rewrites too soon.",
   },
   {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
-    description: "Includes compelling call-to-action buttons that guide users toward desired actions, improving conversions.",
+    icon: "Settings",
+    title: "Ongoing Support",
+    description:
+      "From upgrades to fixes and improvements, we help you maintain momentum after launch.",
   },
   {
-    icon: "Newspaper",
-    title: "Clear Headline",
-    description: "Crafts attention-grabbing headlines that immediately convey value and capture audience interest.",
-  }
+    icon: "SearchCheck",
+    title: "Clear Discovery Process",
+    description:
+      "We listen first, define scope carefully, and recommend the right technical path for the job.",
+  },
 ];
 
 export const FeaturesSection = () => {
@@ -53,7 +59,9 @@ export const FeaturesSection = () => {
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        We build scalable and maintainable software solutions, ensuring businesses grow without tech limitations.
+        Primenet Systems combines product thinking, modern development
+        practices, and practical support to deliver software that is useful
+        from day one.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

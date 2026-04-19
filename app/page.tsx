@@ -1,41 +1,26 @@
 import { BenefitsSection } from "@/components/layout/sections/benefits";
-import { CommunitySection } from "@/components/layout/sections/community";
 import { ContactSection } from "@/components/layout/sections/contact";
 import { FAQSection } from "@/components/layout/sections/faq";
 import { FeaturesSection } from "@/components/layout/sections/features";
 import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
-import { PricingSection } from "@/components/layout/sections/pricing";
 import { ServicesSection } from "@/components/layout/sections/services";
-import { SponsorsSection } from "@/components/layout/sections/sponsors";
-import { TeamSection } from "@/components/layout/sections/team";
-import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export const metadata = {
-  title: "Ziplick",
-  description: "this is the official website for ziplick a software company in Ghana",
+  title: "Primenet Systems",
+  description:
+    "Primenet Systems builds custom software, web platforms, and mobile applications for businesses in Ghana and beyond.",
   openGraph: {
     type: "website",
-    url: "https://github.com/nobruf/shadcn-landing-page.git",
-    title: "Ziplick website",
-    description: "this is a website for ziplick a software company in Ghana",
-    images: [
-      {
-        url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
-        width: 1200,
-        height: 630,
-        alt: "ziplick",
-      },
-    ],
+    title: "Primenet Systems",
+    description:
+      "A software company focused on practical digital solutions, modern user experiences, and reliable delivery.",
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://github.com/nobruf/shadcn-landing-page.git",
-    title: "this is a website for ziplick a software company in Ghana",
-    description: "this is a website for ziplick a software company in Ghana",
-    images: [
-      "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
-    ],
+    title: "Primenet Systems",
+    description:
+      "Custom software, web development, mobile apps, and digital product support for growing businesses.",
   },
 };
 
@@ -43,12 +28,9 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <SponsorsSection />
       <BenefitsSection />
       <FeaturesSection />
       <ServicesSection />
-      <TestimonialSection />
-      <CommunitySection />
       <ContactSection />
       <FAQSection />
       <FooterSection />

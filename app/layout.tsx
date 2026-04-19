@@ -7,8 +7,9 @@ import { ThemeProvider } from "@/components/layout/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ziplick",
-  description: "this is ziplick offical site. A tect company located in Ghana where we build software solutions for businesses. We are a team of developers, designers and product managers. We are passionate about building software that solves real world problems.",
+  title: "Primenet Systems | Software Company in Ghana",
+  description:
+    "Primenet Systems is a software company in Ghana building websites, mobile apps, and custom business software for modern organizations.",
 };
 
 export default function RootLayout({
@@ -17,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className={cn("min-h-screen bg-background", inter.className)}>
         <ThemeProvider
           attribute="class"

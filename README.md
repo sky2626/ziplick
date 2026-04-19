@@ -1,26 +1,20 @@
+# Primenet Systems Website
 
-## How to install
+Marketing website for Primenet Systems, a software company focused on web
+development, mobile apps, and custom business software.
 
-1. Clone this repositoy:
+## Run locally
 
-```bash
-git clone https://github.com/nobruf/shadcn-landing-page.git
-```
-
-2. Go into project
-
-```bash
-cd shadcn-landing-page
-```
-
-3. Install dependencies
+1. Install dependencies:
 
 ```bash
 npm install
 ```
 
-4. Run project
+2. Start the development server:
 
 ```bash
 npm run dev
 ```
+
+3. Open `http://localhost:3000` in your browser.

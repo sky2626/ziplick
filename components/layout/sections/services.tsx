@@ -18,24 +18,28 @@ interface ServiceProps {
 const serviceList: ServiceProps[] = [
   {
     title: "Web Development",
-    description: "Build fast, secure, and scalable websites with modern frameworks and best coding practices.",
-    pro: 0
+    description:
+      "Build fast, secure, and scalable websites that represent your brand and support your business goals.",
+    pro: 0,
   },
   {
-    title: "Mobile App",
-    description: "Develop high-performance mobile applications for Android and iOS with seamless user experiences.",
-    pro: 0
+    title: "Mobile Apps",
+    description:
+      "Develop user-friendly mobile applications for customer engagement, service delivery, and internal operations.",
+    pro: 0,
+  },
+  {
+    title: "Custom Software",
+    description:
+      "Create tailored systems for workflows, business automation, dashboards, and day-to-day operations.",
+    pro: 1,
   },
   {
     title: "UI/UX Design",
-    description: "Craft visually appealing and user-friendly designs that enhance engagement and usability.",
-    pro: 0
+    description:
+      "Design intuitive interfaces that make your product easier to understand, use, and trust.",
+    pro: 0,
   },
-  {
-    title: "Cybersecurity",
-    description: "Implement robust security measures to protect data, prevent breaches, and ensure compliance.",
-    pro: 1
-  }
 ];
 
 export const ServicesSection = () => {
@@ -46,11 +50,12 @@ export const ServicesSection = () => {
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Grow Your Business
+        Software Services Built Around Your Goals
       </h2>
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        From marketing and sales to operations and strategy, we have the
-        expertise to help you achieve your goals.
+        From company websites to custom business platforms, Primenet Systems
+        delivers practical digital products with a strong focus on usability
+        and performance.
       </h3>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 

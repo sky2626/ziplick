@@ -27,51 +27,51 @@ interface ReviewProps {
 const reviewList: ReviewProps[] = [
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    name: "Clear Communication",
+    userName: "What clients appreciate",
     comment:
-      "Wow! Next.js + Shadcn is a game changer. This template allows me to effortlessly customize colors, fonts, and images to align with my brand identity.",
-    rating: 5.0
+      "We break down technical work into practical next steps so stakeholders can make decisions with confidence.",
+    rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    name: "Strong Execution",
+    userName: "What clients appreciate",
     comment:
-      "Security is my top priority, and this framework offers incredible flexibility while ensuring strong protection. The seamless integration is a huge plus!",
-    rating: 4.8
+      "Projects move faster when design, development, and product thinking work together from the start.",
+    rating: 4.8,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
+    name: "Useful Solutions",
+    userName: "What clients appreciate",
     comment:
-      "As a CTO, scalability is critical. This setup is well-structured, fast, and developer-friendly. A fantastic tool for modern web applications!",
-    rating: 4.9
+      "We focus on software that solves real operational problems instead of adding complexity for its own sake.",
+    rating: 4.9,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
+    name: "Reliable Support",
+    userName: "What clients appreciate",
     comment:
-      "Performance is key in data science, and this framework handles complex computations efficiently. Highly recommend it for data-heavy applications!",
-    rating: 5.0
+      "Launch is not the finish line. We help teams improve, maintain, and extend what we build.",
+    rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
+    name: "Business Alignment",
+    userName: "What clients appreciate",
     comment:
-      "Managing multiple projects requires reliable tools. This framework saves time with its intuitive design system and smooth deployment process.",
-    rating: 5.0
+      "Product choices are shaped around business goals, team workflows, and the experience customers need.",
+    rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
+    name: "Modern Delivery",
+    userName: "What clients appreciate",
     comment:
-      "The automation and deployment workflow with this setup is top-notch! It integrates well with CI/CD pipelines, making releases seamless.",
-    rating: 4.9
+      "Modern tooling, responsive design, and clean implementation help teams move with less friction.",
+    rating: 4.9,
   }
 ];
 
@@ -80,11 +80,11 @@ export const TestimonialSection = () => {
     <section id="testimonials" className="container py-24 sm:py-32">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Testimonials
+          Highlights
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Hear What Our Clients Say
+          What Businesses Value
         </h2>
       </div>
 
