@@ -1,5 +1,5 @@
 "use client";
-import { ChevronsDown, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import React from "react";
 import {
   Sheet,
@@ -71,9 +71,22 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
-      <Link href="/" className="font-bold text-lg flex items-center">
-        <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-        Primenet Systems
+      <Link href="/" className="font-bold text-lg flex items-center gap-3">
+        <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 ring-1 ring-primary/15">
+          <Image
+            src="/logo.png"
+            alt="Primenet Systems logo"
+            width={44}
+            height={44}
+            className="h-11 w-11 object-contain"
+          />
+        </span>
+        <span className="hidden sm:block leading-tight">
+          <span className="block text-base md:text-lg">Primenet Systems</span>
+          <span className="block text-xs font-medium text-muted-foreground">
+            Software Solutions
+          </span>
+        </span>
       </Link>
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
@@ -92,9 +105,22 @@ export const Navbar = () => {
             <div>
               <SheetHeader className="mb-4 ml-4">
                 <SheetTitle className="flex items-center">
-                  <Link href="/" className="flex items-center">
-                    <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-                    Primenet Systems
+                  <Link href="/" className="flex items-center gap-3">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 ring-1 ring-primary/15">
+                      <Image
+                        src="/logo.png"
+                        alt="Primenet Systems logo"
+                        width={44}
+                        height={44}
+                        className="h-11 w-11 object-contain"
+                      />
+                    </span>
+                    <span className="leading-tight text-left">
+                      <span className="block text-base">Primenet Systems</span>
+                      <span className="block text-xs font-medium text-muted-foreground">
+                        Software Solutions
+                      </span>
+                    </span>
                   </Link>
                 </SheetTitle>
               </SheetHeader>
