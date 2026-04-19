@@ -64,6 +64,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="stylesheet" href="/site.css?v=1" />
+      </head>
       <body className={cn("min-h-screen bg-background text-foreground")}>
         <ThemeProvider
           attribute="class"
