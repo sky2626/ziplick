@@ -6,6 +6,7 @@ import { FeaturesSection } from "@/components/layout/sections/features";
 import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
 import { ServicesSection } from "@/components/layout/sections/services";
+import { ProductsSection } from "@/components/layout/sections/products";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -77,6 +78,7 @@ export default function Home() {
       <BenefitsSection />
       <FeaturesSection />
       <ServicesSection />
+      <ProductsSection />
       <ContactSection />
       <FAQSection />
       <FooterSection />

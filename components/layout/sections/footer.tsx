@@ -39,6 +39,12 @@ export const FooterSection = () => {
             </div>
 
             <div>
+              <Link href="#products" className="opacity-60 hover:opacity-100">
+                Products
+              </Link>
+            </div>
+
+            <div>
               <Link href="#faq" className="opacity-60 hover:opacity-100">
                 FAQ
               </Link>
@@ -62,6 +68,25 @@ export const FooterSection = () => {
             <div>
               <Link href="#services" className="opacity-60 hover:opacity-100">
                 Custom Software
+              </Link>
+            </div>
+
+            <h3 className="font-bold text-lg mt-4">Products</h3>
+            <div>
+              <Link href="#products" className="opacity-60 hover:opacity-100">
+                SendNest
+              </Link>
+            </div>
+
+            <div>
+              <Link href="#products" className="opacity-60 hover:opacity-100">
+                campusGH
+              </Link>
+            </div>
+
+            <div>
+              <Link href="#products" className="opacity-60 hover:opacity-100">
+                Foody
               </Link>
             </div>
           </div>

@@ -43,6 +43,10 @@ const routeList: RouteProps[] = [
     label: "Services",
   },
   {
+    href: "#products",
+    label: "Products",
+  },
+  {
     href: "#contact",
     label: "Contact",
   },
@@ -64,6 +68,18 @@ const featureList: FeatureProps[] = [
   {
     title: "Web Platforms",
     description: "Modern websites and web apps built for performance.",
+  },
+  {
+    title: "SendNest",
+    description: "High-volume bulk SMS for businesses and marketing campaigns.",
+  },
+  {
+    title: "campusGH",
+    description: "Multi-tenant school management with student & teacher learning platforms.",
+  },
+  {
+    title: "Foody",
+    description: "Multi-tenant food vendor & delivery platform for restaurants.",
   },
 ];
 
